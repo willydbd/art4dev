@@ -1,0 +1,270 @@
+@import "_partials/_vars";
+
+.label {
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: 400;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+}
+
+.label-default {
+  background-color: #777;
+}
+
+.label-default[href]:hover,
+.label-default[href]:focus {
+  background-color: #5e5e5e;
+}
+
+.label-primary {
+  background-color: #337ab7;
+}
+
+.label-primary[href]:hover,
+.label-primary[href]:focus {
+  background-color: #286090;
+}
+
+.label-success {
+  background-color: #5cb85c;
+}
+
+.label-success[href]:hover,
+.label-success[href]:focus {
+  background-color: #449d44;
+}
+
+.label-info {
+  background-color: #5bc0de;
+}
+
+.label-info[href]:hover,
+.label-info[href]:focus {
+  background-color: #31b0d5;
+}
+
+.label-warning {
+  background-color: #f0ad4e;
+}
+
+.label-warning[href]:hover,
+.label-warning[href]:focus {
+  background-color: #ec971f;
+}
+
+.label-danger {
+  background-color: #d9534f;
+}
+
+.label-danger[href]:hover,
+.label-danger[href]:focus {
+  background-color: #c9302c;
+}
+
+.success-msg {
+  color: #4b6de6;
+  font-weight: 500;
+  font-size: 1.8em;
+  text-align: center !important;
+  line-height: 25px;
+}
+
+.error-message {
+  padding: 5px;
+  text-align: center !important;
+  strong {
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+  span {
+    font-size: .9em;
+  }
+}
+
+/*Overwrite table property*/
+.table {
+  font-size: .9em;
+}
+
+.reduced table tr {
+  width: 50px;
+}
+
+.art-works {
+  h4 {
+    font-size: .9em;
+    text-align: center;
+    padding: 5px;
+  }
+  h5 {
+    font-size: 1.4em;
+    color: #007bff;
+    text-align: center;
+    font-weight: lighter;
+    vertical-align: middle;
+    margin: 0;
+  }
+  @media(min-width: 992px) {
+    padding: 10px;
+    float: right;
+    width: 400px;
+    border: 1px solid rgba(#111, .1);
+  }
+  ul {
+    margin: auto;
+  }
+  li {
+    vertical-align: middle;
+    cursor: pointer;
+    float: left;
+    padding: 5px;
+    &:hover {
+      -webkit-transition: ease 0.5s;
+      -moz-transition: ease 0.5s;
+      -ms-transition: ease 0.5s;
+      -o-transition: ease 0.5s;
+      transition: ease 0.5s;
+      -webkit-box-shadow: -2px 2px 5px 3px rgba(#999, .5);
+      -moz-box-shadow: -2px 2px 5px 3px rgba(#999, .5);
+      box-shadow: -2px 2px 5px 3px rgba(#999, .5);
+    }
+
+    img {
+      width: 104px;
+      max-height: 104px;
+    }
+  }
+}
+.no-result {
+  padding-top: 15px;
+  i {
+    vertical-align: middle;
+  }
+  span {
+    font-size: 1.4em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #7b7c80;
+  }
+}
+/*style for the mail*/
+
+.mail-container {
+  max-width: 600px;
+  height: auto;
+  border: 1px solid #222222;
+  margin: auto;
+  .head {
+    float: right;
+    padding: 10px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.mail-footer {
+  background: rgb(150,120,100);
+  width: inherit;
+  padding: 10px;
+  text-align: center;
+  span {
+    font-size: .9em;
+    color: #f7f7f7;
+  }
+}
+.mail-content {
+  padding: 15px;
+  h4 {
+    margin: 0;
+  }
+  p {
+    line-height: 25px;
+    font-size: 1em;
+  }
+  span {
+    font-weight: 500;
+    font-size: 1em;
+    color: rgba(10, 10, 10, .7);
+    line-height: 20px;
+    display: block;
+  }
+}
+.mail-table {
+  max-width: 590px;
+  border-collapse: collapse;
+  margin: 2px auto 5px;
+  padding: 10px;
+  display: block;
+
+  th {
+    height: 30px;
+    padding: 5px;
+    background: rgb(20,30,40);
+    color: #ffffff;
+    font-size: .9em;
+  }
+  tr, td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #111;
+  }
+}
+.community {
+  h3 {
+    font-size: 1.4em;
+    font-weight: 500;
+    text-align: center;
+  }
+  margin: 13px;
+  border: 1px solid rgba(0,0,0,.3);
+  padding: 15px;
+  .control-label {
+    font-size: .81em;
+    color: #000;
+    font-weight: 500;
+  }
+  .form-control {
+    box-shadow: none;
+    border-radius: 2px;
+  }
+  .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    overflow: hidden;
+    //position: absolute;
+    z-index: 1;
+    opacity: 0;
+    + label {
+      font-size: 1.2em;
+      background: $theme-white;
+      display: inline-block;
+      padding: .5em 20px;
+      color: $theme-red;
+      cursor: pointer;
+      border: 1px solid $theme-red;
+      &:hover {
+        background-color: $theme-red;
+        color: $theme-white;
+      }
+    }
+    &:focus {
+      + label {
+        background-color: $theme-red;
+        color: $theme-white;
+      }
+    }
+    .has-focus {
+      + label {
+        outline: 1px dotted #000;
+        outline: -webkit-focus-ring-color auto 5px;
+      }
+    }
+  }
+}

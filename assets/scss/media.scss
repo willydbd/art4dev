@@ -1,0 +1,208 @@
+@media(max-width: 768px) {
+    .alert-cover {
+        .alert-body {
+            width: 65%;
+        }
+    }
+    .subscribe {
+        .inner-subscribe {
+            .sub-form {
+                width: 70%;
+            }
+        }
+        .register {
+            .inner-register {
+                .reg-center {
+                    display: inline;
+                    margin: 20px;
+                }
+            }
+        }
+    }
+    .exhibitor-page {
+      .inner-exhibitor {
+        .ex-detail {
+          width: 25%;
+          box-shadow: 3px 2px 3px #222;
+        }
+      }
+    }
+    .sponsor-page {
+        h3 {
+            font-size: 25px;
+        }
+        .inner-sponsor {
+            li a {
+                width: 40%;
+                height: 120px;
+            }
+            .about-content {
+                width: 98%;
+                padding: 3px;
+                li {
+                    float: left;
+                }
+            }
+        }
+    }
+    .faq-section {
+        .faq-header {
+            height: 100%;
+            .adjust {
+                display: none;
+            }
+            h3 {
+                float: none;
+                text-align: center;
+                margin: 0;
+            }
+        }
+    }
+    .faq-body {
+        .faq-nav {
+            width: 100%;
+            padding-left: 50px;
+            margin: 10px auto 10px;
+            max-height: 3.2em;
+            background: #222;
+            position: relative;
+            ul {
+                list-style: none;
+                padding: 0;
+            }
+            li a {
+                float: left;
+                padding: 13px;
+                background:none;
+                display: block;
+                border: none;
+                text-decoration: none;
+                &:hover {
+                    background: rgb(255,255,255);
+                    text-decoration: none;
+                    color: red;
+                    -webkit-transition: ease 0.5s;
+                    -moz-transition: ease 0.5s;
+                    -ms-transition: ease 0.5s;
+                    -o-transition: ease 0.5s;
+                    transition: ease 0.5s;
+                }
+            }
+        }
+        .faq-content {
+            width: 100%;
+            margin-left: 0;
+            .inner {
+                padding: 1em;
+            }
+        }
+    }
+    .sl-slider{
+        .inner-text {
+            width: 90%;
+            margin: 10em auto;
+            li {
+                display: block;
+                font-size: 2.6em;
+                padding: 10px;
+            }
+        }
+        .col-sl-12 {
+            height: auto;
+        }
+        .col-sl-2 {
+            width: 80%;
+            margin-top: 10em;
+            display: block;
+            text-shadow: 2px 0px 3px #111;
+            top: 0;
+            text-align: center;
+            span {
+                font-size: 3em;
+            }
+        }
+        .col-sl-3 {
+            padding-top: 14em;
+            width: 80%;
+            display: block;
+            span {
+                font-size: 2em;
+            }
+        }
+        ._5 {
+            width: 44%;
+            right: 10%;
+            .img-ho {
+                width: 300px;
+            }
+            .cum {
+                padding-right: 35px;
+            }
+            .disc {
+                span {
+                    font-size: 2.4em;
+                    text-shadow: 2px 0px 3px #111;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 414px) {
+    .faq-body {
+        .faq-nav {
+            padding-left: 0;
+            margin: 10px auto 10px;
+            max-height: 6em;
+            background: #222;
+            position: relative;
+        }
+    }
+    .creativity {
+        .inner-creativity {
+            padding: 0;
+        }
+    }
+    .subscribe {
+        .inner-subscribe {
+            padding: 3px;
+            h3 {
+                margin-top: .9em;
+            }
+            .sub-form {
+                width: 100%;
+            }
+        }
+    }
+    .exhibitor-page {
+        .inner-exhibitor {
+            .col-3 {
+                width: 90%;
+            }
+            .ex-detail {
+                width: 50%;
+            }
+        }
+    }
+    .sl-slider{        
+        ._5 {
+            margin-top: 7em;
+            .cum {
+                padding-right: 35px;
+                li {
+                    font-size: 1.5em;
+                }
+                .read {
+                    .read-btn {
+                        padding: 1em .5em;
+                    }
+                }
+            }
+            .disc {
+                span {
+                    font-size: 2em;
+                }
+            }
+        }
+    }
+}

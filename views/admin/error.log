@@ -1,0 +1,9 @@
+[16-Apr-2018 10:56:41 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/art4dev-new/lib/Classes/Admin.php:22) in /Applications/MAMP/htdocs/art4dev-new/lib/Classes/Participant.php on line 355
+[16-Apr-2018 10:56:41 Africa/Lagos] PHP Stack trace:
+[16-Apr-2018 10:56:41 Africa/Lagos] PHP   1. {main}() /Applications/MAMP/htdocs/art4dev-new/views/admin/index.php:0
+[16-Apr-2018 10:56:41 Africa/Lagos] PHP   2. Participant->redirect() /Applications/MAMP/htdocs/art4dev-new/views/admin/index.php:4
+[16-Apr-2018 10:56:41 Africa/Lagos] PHP   3. header() /Applications/MAMP/htdocs/art4dev-new/lib/Classes/Participant.php:355
+[16-Apr-2018 10:56:41 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/art4dev-new/lib/Classes/Admin.php:22) in /Applications/MAMP/htdocs/art4dev-new/views/admin/index.php on line 66
+[16-Apr-2018 10:56:41 Africa/Lagos] PHP Stack trace:
+[16-Apr-2018 10:56:41 Africa/Lagos] PHP   1. {main}() /Applications/MAMP/htdocs/art4dev-new/views/admin/index.php:0
+[16-Apr-2018 10:56:41 Africa/Lagos] PHP   2. header() /Applications/MAMP/htdocs/art4dev-new/views/admin/index.php:66

@@ -1,0 +1,42 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+RewriteRule ^registration/?$ views/register.php [NC,L,QSA]
+RewriteRule ^login/?$ views/login.php [NC,L,QSA]
+RewriteRule ^donation/?$ views/donate.php [NC,L,QSA]
+RewriteRule ^logout/?$ views/logout.php [NC,L,QSA]
+RewriteRule ^show-room/?$ views/gallery.php [NC,L,QSA]
+RewriteRule ^faqs/?$ views/faqs.php [NC,L,QSA]
+RewriteRule ^sponsors/?$ views/sponsors.php [NC,L,QSA]
+RewriteRule ^about/?$ views/about-us.php [NC,L,QSA]
+
+#!-- exhibitor profile page
+RewriteRule ^exhibitors/?$ views/exhibitors.php [NC,L,QSA]
+RewriteRule ^community/?$ views/our-community.php [NC,L,QSA]
+RewriteRule ^exhibitors/profile/?$ views/ex-profile.php [NC,L,QSA]
+RewriteRule ^exhibitors/profile/([A-Za-z0-9\-_\.]+)/?$ views/ex-profile.php?slug=$1 [NC,L,QSA]
+RewriteRule ^community/profile/([A-Za-z0-9\-_\.]+)/?$ views/ex-profile.php?slug=$1 [NC,L,QSA]
+RewriteRule ^portfolio/?$ views/portfolio.php [NC,L,QSA]
+RewriteRule ^portfolio/update-profile/?$ views/update.php [NC,L,QSA]
+RewriteRule ^portfolio/add-arts/?$ views/upload_artworks.php [NC,L,QSA]
+RewriteRule ^portfolio/visit-my-shop/?$ views/my_artworks.php [NC,L,QSA]
+#ErrorDocument 404 ^wrong-direction/?$ view/pagenotfound.php [NC,L,QSA]
+#!--errorDocument 404 http://art4dev.actionaid-ngr.org/pagenotfound
+
+#!--Admin rewrite
+RewriteRule ^admin/?$ views/admin/index.php [NC,L,QSA]
+RewriteRule ^admin/dashboard/?$ views/admin/dashboard.php [NC,L,QSA]
+RewriteRule ^admin/logout/?$ views/admin/logout.php [NC,L,QSA]
+RewriteRule ^admin/forgot-password/?$ views/admin/forgot-password.php [NC,L,QSA]
+RewriteRule ^admin/exhibitors/?$ views/admin/exhibitor.php [NC,L,QSA]
+RewriteRule ^admin/donators/?$ views/admin/donators.php [NC,L,QSA]
+RewriteRule ^admin/register/?$ views/admin/register.php [NC,L,QSA]
+RewriteRule ^admin/community/?$ views/admin/community.php [NC,L,QSA]
+RewriteRule ^admin/ex-community/?$ views/admin/view-community.php [NC,L,QSA]
+
+#--To rewrite the url to be more user-friendly
+RewriteRule ^admin/view-details/([A-Za-z0-9\-_\.]+)/?$ views/admin/view-details.php?uid=$1 [NC,L,QSA]
+RewriteRule ^admin/view-details/d/([A-Za-z0-9\-_\.]+)/?$ views/admin/view-details.php?uid=$1 [NC,L,QSA]
+
+
+</IfModule>
